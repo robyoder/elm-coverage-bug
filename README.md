@@ -38,7 +38,7 @@ Emitted 'error' event on ChildProcess instance at:
 }
 ```
 
-I also tried `./node_modules/.bin/elm-coverage --elm-test ./node_modules/.bin/elm-test -- --compiler ./node_modules/.bin/elm-test`, but the only difference that made was tacking on a couple more arguments to `spawnargs`:
+I also tried `./node_modules/.bin/elm-coverage --elm-test ./node_modules/.bin/elm-test -- --compiler ./node_modules/.bin/elm`, but the only difference that made was tacking on a couple more arguments to `spawnargs`:
 
 ```
   spawnargs: [
@@ -46,7 +46,7 @@ I also tried `./node_modules/.bin/elm-coverage --elm-test ./node_modules/.bin/el
     '/Users/rob/Projects/elm-coverage-bug/node_modules/elm-coverage/bin/fake-elm',
     'tests/',
     '--compiler',
-    './node_modules/.bin/elm-test'
+    './node_modules/.bin/elm'
   ]
 ```
 
