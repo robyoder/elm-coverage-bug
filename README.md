@@ -79,6 +79,8 @@ Emitted 'error' event on ChildProcess instance at:
 }
 ```
 
+Looking closer, it appears as though relative paths are not resolved correctly. Providing an absolute path to elm-test works.
+
 In any case, I don't want to globally install these things because I want the versions to be pinned in each of my projects.
 
 ## Additional info
